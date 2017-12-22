@@ -1,0 +1,20 @@
+server:
+  port: 8236
+spring:
+  redis:
+    host: mt.hb520.site
+    port: 6379
+  application:
+    name: "article"
+  cloud:
+    zookeeper:
+      connect-string: mt.hb520.site:2182
+      discovery:
+        instance-host： 192.168.1.9
+        instance-port： 8236
+      config:
+        enabled: true
+        root: configuration
+        defaultContext: apps
+        profileSeparator: '::'
+      enabled: true
